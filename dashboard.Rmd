@@ -1,0 +1,148 @@
+---
+title: "Dashboard for Optimality Analysis of Surfing Times"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: scroll
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(plotly)
+library(lubridate)
+library(DT)
+```
+
+```{r data, include=FALSE}
+
+run_python = function() {
+  system("python script.py", intern=TRUE, ignore.stderr=TRUE, ignore.stdout=TRUE)
+}
+
+tryCatch(
+  expr = {
+    run_python()
+  },
+  error = function(e){
+    data = read.csv("surf_scape.csv")
+    print("Libraries could not be installed to the respective python profile. Loaded csv file instead")
+  }, 
+  finally = {
+    print("Proceeding from here. ")
+  }
+)
+data = read.csv("surf_scrape.csv")
+data$date_time = paste(data$Date, data$Time, sep=" ")
+
+#-# // compute the best day
+best_day = which.max(data$Rating)
+best_time = data[best_day, ]
+best_time_p1 = data[best_day+1, ]
+
+hours_bd = as.numeric(strsplit(best_time$Time, ":")[[1]][1])
+hours_bdp1 = as.numeric(strsplit(best_time_p1$Time, ":")[[1]][1])
+if (hours_bdp1 == 0)
+  hours_bdp1 = 24
+hours_bd = paste(hours_bd, hours_bdp1, sep="h-")
+hours_bd = paste(hours_bd, "h", sep="")
+hours_bd = paste(best_time$Date, hours_bd, sep=" ")
+
+#-# // Highest Wave
+highest_wave = which.max(data$Upper.Wave.Size)
+
+hwd = data[highest_wave, ]
+
+hw_hours = as.numeric(strsplit(hwd$Time, ":")[[1]][1])
+hw_hours = paste(hw_hours, "h", sep="")
+hw = paste(hw_hours, hwd$Upper.Wave.Size, sep=" : ") 
+hw = paste(hw, "m", sep="")
+hw = paste(hwd$Date, hw, sep=" ")
+
+#-# // Data Table
+subtable = data[,c("Date", "Time", "Wave.Interval", "Wind.Direction")]
+
+```
+
+Row
+----------------------
+
+### Optimal Day and Time to go Surfing
+
+```{r}
+valueBox(hours_bd, caption="Optimal Date and Time", color="gold")
+```
+
+### Gauge for the Optimal Time
+```{r}
+gauge(value=best_time$Rating, min=0, max=3.26,
+      gaugeSectors(
+        success = c(2,3.26), warning = c(1,2), danger=c(0,1)
+      ))
+```
+
+
+Row
+------------------------
+### Highest Wave Size
+
+```{r}
+valueBox(hw, caption="Highest Wave of The Week", color="darkblue")
+```
+
+Row
+------------------------
+### Data Analysis of the Whole Week, per Day
+
+```{r}
+#-# // we have 8 hour intervals per day
+datatable(data=subtable, options=list(pageLength=8), 
+          colnames=c("Date", "Time", "Wave Interval", "Wind Direction"))
+```
+
+
+Row
+-------------------------
+### Wave Plot
+
+```{r}
+
+tickvals = seq(1, nrow(data), by=8)
+plot = plot_ly(data, 
+               x = data$date_time, 
+               y = data$Avg.Wave.Size,
+               type = "scatter",
+               mode = "lines",
+               fill = "tozeroy", 
+               fillcolor="lightblue") %>%
+  layout(title = "Average Wave Size",
+         xaxis = list(title="Date",
+                      tickvals = tickvals),
+         yaxis = list(title="Avg Wave Size"))
+plot
+```
+
+Row 
+-------------------------
+### Wind Direction over time
+
+```{r}
+tickvals = seq(1, nrow(data), by=8)
+
+plot = plot_ly(data,
+               x = data$date_time,
+               y = data$Wind.Speed,
+               type = "scatter", 
+               mode = "lines", 
+               fill = "tozeroy",
+               fillcolor="lightgray") %>% 
+  layout(title = "Average Wind Speed",
+    xaxis = list(title="Date",
+                 tpye = "category",
+                 tickvals = tickvals),
+    yaxis = list(title="Avg Wind Speed"))
+
+plot
+```
+
+

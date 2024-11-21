@@ -1,0 +1,57 @@
+,Date,Time,Lower Wave Size,Upper Wave Size,Avg Wave Size,Wave Interval,Wind Speed,Wind Speed Text,Rating,Wind Direction
+0,"Saturday, Nov 16",00:00:00,0.4,0.6,0.5,0.4m - 0.6m,19.0,19.0km/h,0.0,East
+1,"Saturday, Nov 16",03:00:00,0.4,0.6,0.5,0.4m - 0.6m,23.0,23.0km/h,0.0,East South East
+2,"Saturday, Nov 16",06:00:00,0.4,0.6,0.5,0.4m - 0.6m,20.0,20.0km/h,0.0,East South East
+3,"Saturday, Nov 16",09:00:00,0.4,0.6,0.5,0.4m - 0.6m,14.0,14.0km/h,0.0,East South East
+4,"Saturday, Nov 16",12:00:00,0.4,0.6,0.5,0.4m - 0.6m,4.0,4.0km/h,0.0,South East
+5,"Saturday, Nov 16",15:00:00,0.4,0.6,0.5,0.4m - 0.6m,6.0,6.0km/h,0.7348,North North West
+6,"Saturday, Nov 16",18:00:00,0.3,0.5,0.4,0.3m - 0.5m,10.0,10.0km/h,1.122,North North West
+7,"Saturday, Nov 16",21:00:00,0.3,0.5,0.4,0.3m - 0.5m,21.0,21.0km/h,2.1627,North
+8,"Sunday, Nov 17",00:00:00,0.3,0.5,0.4,0.3m - 0.5m,15.0,15.0km/h,1.3858,North North East
+9,"Sunday, Nov 17",03:00:00,0.3,0.5,0.4,0.3m - 0.5m,16.0,16.0km/h,1.413,North North East
+10,"Sunday, Nov 17",06:00:00,0.3,0.4,0.35,0.3m - 0.4m,16.0,16.0km/h,0.7065,North East
+11,"Sunday, Nov 17",09:00:00,0.3,0.5,0.4,0.3m - 0.5m,17.0,17.0km/h,1.4325,North North East
+12,"Sunday, Nov 17",12:00:00,0.4,0.6,0.5,0.4m - 0.6m,6.0,6.0km/h,1.1021,North
+13,"Sunday, Nov 17",15:00:00,0.5,0.7,0.6,0.5m - 0.7m,4.0,4.0km/h,0.4148,North West
+14,"Sunday, Nov 17",18:00:00,0.5,0.8,0.65,0.5m - 0.8m,6.0,6.0km/h,0.5511,South
+15,"Sunday, Nov 17",21:00:00,0.6,0.8,0.7,0.6m - 0.8m,12.0,12.0km/h,0.941,South West
+16,"Monday, Nov 18",00:00:00,0.6,0.9,0.75,0.6m - 0.9m,19.0,19.0km/h,1.0876,West
+17,"Monday, Nov 18",03:00:00,0.6,1.0,0.8,0.6m - 1.0m,6.0,6.0km/h,0.5511,South South East
+18,"Monday, Nov 18",06:00:00,0.6,0.9,0.75,0.6m - 0.9m,10.0,10.0km/h,0.8415,South
+19,"Monday, Nov 18",09:00:00,0.6,1.0,0.8,0.6m - 1.0m,10.0,10.0km/h,0.8415,South
+20,"Monday, Nov 18",12:00:00,0.7,1.0,0.85,0.7m - 1.0m,9.0,9.0km/h,0.7808,South
+21,"Monday, Nov 18",15:00:00,0.7,1.1,0.9,0.7m - 1.1m,9.0,9.0km/h,0.3904,South South East
+22,"Monday, Nov 18",18:00:00,0.7,1.1,0.9,0.7m - 1.1m,9.0,9.0km/h,0.3904,South
+23,"Monday, Nov 18",21:00:00,0.7,1.0,0.85,0.7m - 1.0m,18.0,18.0km/h,1.0836,South West
+24,"Tuesday, Nov 19",00:00:00,0.7,1.0,0.85,0.7m - 1.0m,24.0,24.0km/h,1.0403,South West
+25,"Tuesday, Nov 19",03:00:00,0.6,0.9,0.75,0.6m - 0.9m,31.0,31.0km/h,0.8368,West South West
+26,"Tuesday, Nov 19",06:00:00,0.5,0.8,0.65,0.5m - 0.8m,36.0,36.0km/h,0.6416,West South West
+27,"Tuesday, Nov 19",09:00:00,0.9,1.4,1.15,0.9m - 1.4m,47.0,47.0km/h,0.0,West South West
+28,"Tuesday, Nov 19",12:00:00,1.1,1.7,1.4,1.1m - 1.7m,49.0,49.0km/h,0.0,West South West
+29,"Tuesday, Nov 19",15:00:00,1.2,1.8,1.5,1.2m - 1.8m,43.0,43.0km/h,0.0,West
+30,"Tuesday, Nov 19",18:00:00,1.2,1.8,1.5,1.2m - 1.8m,30.0,30.0km/h,0.0,West
+31,"Tuesday, Nov 19",21:00:00,0.8,1.2,1.0,0.8m - 1.2m,26.0,26.0km/h,1.1611,North West
+32,"Wednesday, Nov 20",00:00:00,2.6,3.8,3.2,2.6m - 3.8m,17.0,17.0km/h,0.0,North West
+33,"Wednesday, Nov 20",03:00:00,1.7,2.6,2.15,1.7m - 2.6m,25.0,25.0km/h,0.0,West North West
+34,"Wednesday, Nov 20",06:00:00,2.4,3.7,3.05,2.4m - 3.7m,26.0,26.0km/h,0.0,West North West
+35,"Wednesday, Nov 20",09:00:00,2.2,3.3,2.75,2.2m - 3.3m,23.0,23.0km/h,0.0,North West
+36,"Wednesday, Nov 20",12:00:00,2.0,3.0,2.5,2.0m - 3.0m,23.0,23.0km/h,0.0,North West
+37,"Wednesday, Nov 20",15:00:00,1.8,2.7,2.25,1.8m - 2.7m,26.0,26.0km/h,0.0,North West
+38,"Wednesday, Nov 20",18:00:00,1.6,2.5,2.05,1.6m - 2.5m,24.0,24.0km/h,0.0,North West
+39,"Wednesday, Nov 20",21:00:00,1.5,2.2,1.85,1.5m - 2.2m,14.0,14.0km/h,1.3506,North North West
+40,"Thursday, Nov 21",00:00:00,1.3,2.0,1.65,1.3m - 2.0m,12.0,12.0km/h,0.6273,North West
+41,"Thursday, Nov 21",03:00:00,1.2,1.8,1.5,1.2m - 1.8m,13.0,13.0km/h,0.6535,West North West
+42,"Thursday, Nov 21",06:00:00,0.9,1.4,1.15,0.9m - 1.4m,10.0,10.0km/h,0.561,West North West
+43,"Thursday, Nov 21",09:00:00,0.7,1.1,0.9,0.7m - 1.1m,4.0,4.0km/h,0.1778,South West
+44,"Thursday, Nov 21",12:00:00,0.3,0.4,0.35,0.3m - 0.4m,19.0,19.0km/h,0.0,East South East
+45,"Thursday, Nov 21",15:00:00,3.3,5.0,4.15,3.3m - 5.0m,13.0,13.0km/h,0.0,West South West
+46,"Thursday, Nov 21",18:00:00,2.7,4.0,3.35,2.7m - 4.0m,33.0,33.0km/h,0.0,West North West
+47,"Thursday, Nov 21",21:00:00,2.2,3.3,2.75,2.2m - 3.3m,11.0,11.0km/h,0.0,North
+48,"Friday, Nov 22",00:00:00,1.9,2.9,2.4,1.9m - 2.9m,13.0,13.0km/h,0.0,North
+49,"Friday, Nov 22",03:00:00,1.6,2.4,2.0,1.6m - 2.4m,8.0,8.0km/h,0.4749,East North East
+50,"Friday, Nov 22",06:00:00,1.2,1.7,1.45,1.2m - 1.7m,10.0,10.0km/h,0.0,East
+51,"Friday, Nov 22",09:00:00,1.3,2.0,1.65,1.3m - 2.0m,14.0,14.0km/h,0.0,East South East
+52,"Friday, Nov 22",12:00:00,1.6,2.4,2.0,1.6m - 2.4m,17.0,17.0km/h,0.0,East South East
+53,"Friday, Nov 22",15:00:00,1.5,2.3,1.9,1.5m - 2.3m,46.0,46.0km/h,0.0,West
+54,"Friday, Nov 22",18:00:00,1.2,1.8,1.5,1.2m - 1.8m,38.0,38.0km/h,0.0,West
+55,"Friday, Nov 22",21:00:00,0.9,1.4,1.15,0.9m - 1.4m,36.0,36.0km/h,0.0,West
